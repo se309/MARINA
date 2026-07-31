@@ -97,7 +97,7 @@ function buildWhatsAppLink() {
         const items = SERVICES.filter(s => cart.has(s.id));
         const lines = items.map(s => `• ${s.nameAr} (${s.name}) — ${s.price} ${s.unit}`).join('\n');
         const total = items.reduce((sum, s) => sum + s.price, 0);
-        text = `أهلاً كوكي نيلز ✨\nعايزة أحجز الخدمات الآتية:\n${lines}\n\nالإجمالي التقريبي: ${total} EGP\nمستنية ردكم لتأكيد الميعاد 🌸`;
+        text = `أهلاً مارينا ✨\nعايزة أحجز الخدمات الآتية:\n${lines}\n\nالإجمالي التقريبي: ${total} EGP\nمستنية ردكم لتأكيد الميعاد 🌸`;
     }
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 }
@@ -212,10 +212,10 @@ function wireBookingLinks() {
     const footerPhone = document.getElementById('footerPhone');
     const footerWa = document.getElementById('footerWa');
     if (WHATSAPP_NUMBER !== "201000000000") {
-        if (phoneDisplay) phoneDisplay.textContent = "+" + WHATSAPP_NUMBER;
-        if (footerPhone) footerPhone.textContent = "+" + WHATSAPP_NUMBER;
+        if (phoneDisplay) phoneDisplay.textContent = "+" + 201274067671;
+        if (footerPhone) footerPhone.textContent = "+" + 201274067671;
     }
-    if (footerWa) footerWa.href = `https://wa.me/${+201274067671}`;
+    if (footerWa) footerWa.href = `https://wa.me/${201274067671}`;
 }
 
 function wireNavCart() {
